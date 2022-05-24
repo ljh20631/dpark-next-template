@@ -1032,3 +1032,11 @@ ul.search-result > li.search-item > span > a > p.search-text::after {
 	font-size: 12px;
 	font-weight: bolder;
 }
+
+td > p {
+	margin-bottom: 0;
+}
+
+.body-article-container > h4.info:first-child{
+	margin-top: 10px !important;
+}

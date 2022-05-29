@@ -1040,3 +1040,7 @@ td > p {
 .body-article-container > h4.info:first-child{
 	margin-top: 10px !important;
 }
+
+.body-article-container .Headings_H3{
+  font-weight: bold;
+}

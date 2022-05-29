@@ -1037,10 +1037,24 @@ td > p {
 	margin-bottom: 0;
 }
 
-.body-article-container > h4.info:first-child{
+#body-app .body-section-container p.P-Big,
+#body-app .body-article-container p.P-Big{
+  font-size: 20px;
+}
+
+#body-app .body-section-container .BOLD,
+#body-app .body-article-container .BOLD{
+  font-weight: bold;
+}
+
+#body-app .body-article-container > h4.info:first-child{
 	margin-top: 10px !important;
 }
 
-.body-article-container .Headings_H3{
+#body-app .body-article-container .Headings_H3{
   font-weight: bold;
+}
+
+#body-app .body-article-container ol.OL-Alpha{
+  list-style-type: upper-alpha;
 }

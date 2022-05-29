@@ -124,7 +124,7 @@ body {
 }
 
 .navbar > .container-fluid .dropdown .dropdown-menu.show {
-	max-height: 500px;
+	max-height: 700px;
 }
 
 @media (min-width:768px) {
@@ -164,7 +164,7 @@ body {
 		right: -17px;
 		left: 0;
 		z-index: 999;
-		max-height: 440px;
+		max-height: 800px;
 		overflow-y: scroll;
 	}
 	

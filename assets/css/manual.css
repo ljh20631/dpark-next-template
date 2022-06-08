@@ -1042,8 +1042,20 @@ td > p {
   font-size: 20px;
 }
 
-#body-app .body-section-container .BOLD,
-#body-app .body-article-container .BOLD{
+#body-app .body-section-container td > p.P-Center,
+#body-app .body-article-container td > p.P-Center,
+#body-app .body-section-container th > p.P-Center,
+#body-app .body-article-container th > p.P-Center{
+  text-align: center;
+}
+
+#body-app .body-section-container .bold,
+#body-app .body-article-container .bold{
+  font-weight: bold;
+}
+
+#body-app .body-section-container .strong,
+#body-app .body-article-container .strong{
   font-weight: bold;
 }
 

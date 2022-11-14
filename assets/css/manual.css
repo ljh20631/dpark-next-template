@@ -1070,3 +1070,7 @@ td > p {
 #body-app .body-article-container ol.OL-Alpha{
   list-style-type: upper-alpha;
 }
+
+#body-app .body-article-container ol.leading-zero{
+	list-style-type: decimal-leading-zero;
+}

@@ -1072,5 +1072,6 @@ td > p {
 }
 
 #body-app .body-article-container ol.leading-zero{
-	list-style-type: decimal-leading-zero;
+	list-style-type: decimal-leading-zero;	
+	padding-left: 15px;
 }

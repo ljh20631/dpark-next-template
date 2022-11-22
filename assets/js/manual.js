@@ -8,7 +8,8 @@ var headerApp = new Vue({
     noResultShow: false,
     articleList: [],
     paragraphList: [],
-    currentSection: 0
+    currentSection: 0,
+    languageList: languageList
   },
   mounted: function(){
     let sections = document.querySelectorAll('section');

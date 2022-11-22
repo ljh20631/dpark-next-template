@@ -19,7 +19,7 @@
   </script>
   <script nomodule crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"></script>
   <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script>');</script>
-
+  <script src="../../../../assets/js/language.js"></script>
   <script>
     if(isIE()){
       document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"><\/script>');
@@ -67,15 +67,13 @@
                 Language
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="manual-kor.html">KOR</a></li>
-                <li><a class="dropdown-item" href="manual-eng.html">ENG</a></li>
-                <li><a class="dropdown-item" href="manual-chn.html">CHN</a></li>
+                <li v-for="item in languageList"><a class="dropdown-item" :href="item.src">{{ item.name }}</a></li>
               </ul>
             </div>
             <div ref="navbarToggle" class="collapse navbar-collapse" id="navbarCollapse">
               <ul id="ContentsContainer" class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li :class="getNavSectionClass(1)">
-                  <a class="contents-section nav-link dropdown-toggle main_menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="contents-section nav-link dropdown-toggle main_menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     [Section]
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">

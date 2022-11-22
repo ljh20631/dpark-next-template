@@ -30,6 +30,7 @@ body {
 .navbar > .container-fluid{
 	justify-content: flex-start;
 	padding: 0;
+	min-height: 84px;
 }
 
 .navbar > .container-fluid > .button-container{
@@ -75,10 +76,17 @@ body {
 	.navbar > .container-fluid > .language-container{
     margin-left: auto;
     order: 1;
+	text-align: right;
   }
 
+@media (min-width:991px) {
+	.navbar > .container-fluid > .language-container{
+		min-width: 600px;
+	}
+}
+
   .navbar > .container-fluid > .navbar-collapse{
-    order: 2;
+    order: 2;	
   }
 }
 

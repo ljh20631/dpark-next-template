@@ -116,6 +116,7 @@ body {
 	color: #fff;
 	padding-bottom: 12px;
 	cursor: pointer;
+	white-space:nowrap;
 }
 
 .navbar > .container-fluid .dropdown .dropdown-menu {
@@ -1075,11 +1076,41 @@ td > p {
   font-weight: bold;
 }
 
-#body-app .body-article-container ol.OL-Alpha{
-  list-style-type: upper-alpha;
+#body-app .body-article-container table.TABLE-Code > thead > tr > td:first-child{
+	min-width: 70px;
 }
 
-#body-app .body-article-container ol.leading-zero{
+#body-app .body-article-container span.Inline-Text-Elements_Superscript{
+	vertical-align: super;
+	font-size: small;
+}
+
+
+#body-app .body-article-container ol.Lists_OL-OL-Alpha,
+#body-app .body-article-container ol.Lists_OL-OL-Alpha-Start {
+	list-style-type: upper-alpha;
+}
+
+#body-app .body-article-container ol.Lists_OL-Styled,
+#body-app .body-article-container ol.Lists_OL-Styled-Start {
 	list-style-type: decimal-leading-zero;	
 	padding-left: 15px;
+}
+
+#body-app .body-article-container ol.Lists_OL-Alpha-Styled,
+#body-app .body-article-container ol.Lists_OL-Alpha-Styled-Start {
+    counter-reset: list;
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+
+#body-app .body-article-container ol.Lists_OL-Alpha-Styled > li,
+#body-app .body-article-container ol.Lists_OL-Alpha-Styled-Start > li {
+    list-style: none;
+}
+
+#body-app .body-article-container ol.Lists_OL-Alpha-Styled > li:before,
+#body-app .body-article-container ol.Lists_OL-Alpha-Styled-Start > li:before {
+    content: "(" counter(list,upper-latin) ") ";
+    counter-increment: list;
 }

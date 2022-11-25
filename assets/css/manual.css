@@ -575,7 +575,14 @@ section .alert ul {
 	padding: 15px;
 }
 #body-app section p img.img-fluid {
-	width: 100%;
+	width: 100%;	
+}
+
+.center-block{
+	max-width: 600px;
+	display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .danger_box_01 {
